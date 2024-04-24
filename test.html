@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 600px;
+      height: 300px;
+      background-color: #aaa;
+      text-align: left;
+
+
+    }
+
+    .picture {
+      font-size: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+
+    .content {
+      font-size: 16px;
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      height: 180px;
+      width: 300px;
+      padding-left: 10px;
+      line-height: 15px;
+    }
+
+    .h2 {
+      margin-bottom: 1px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="picture">
+      <img src="https://via.placeholder.com/200x200" alt="">
+    </div>
+
+    <div class="content">
+      <h2>title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Doloribus, quas maxime facilis doloremque atque ipsa
+        consequuntur alias at eius quis laborum tempore reiciendis
+        voluptas earum voluptatibus dolore laboriosam culpa rem!</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
