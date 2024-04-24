@@ -6,7 +6,7 @@ cast((select sum(amounts) from Overtime as s where s.DeptName=p.DeptName and yea
 /
 cast((select sum(Hours) from Overtime as s where s.DeptName=p.DeptName and year(sheetdate)=2022)as decimal)
 )as int)
- as平均每小時加班費
+ as平均每小時加班費????
 
 from Overtime as p
 group by DeptName
